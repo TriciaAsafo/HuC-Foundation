@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Water Project | HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-detail {
+            padding: 3rem 0;
+        }
+        
+        .project-overview {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-container {
+            margin: 2rem 0;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery img, .gallery video {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.05);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <h1>Clean Water, Healthy Lives Initiative</h1>
+            
+            <div class="project-overview">
+                <h2>Project Overview</h2>
+                <p>This project provides clean and safe drinking water to the community of Biankouri, Togo, improving health and overall well-being. Residents previously relied on unsafe water sources, leading to waterborne diseases.</p>
+                
+                <h3>Key Objectives:</h3>
+                <ul>
+                    <li>Install sustainable water supply systems (boreholes/filtration units)</li>
+                    <li>Reduce waterborne diseases and improve hygiene practices</li>
+                    <li>Educate the community on water conservation and maintenance</li>
+                </ul>
+                
+                <h3>Expected Impact:</h3>
+                <ul>
+                    <li>Better health outcomes with fewer water-related illnesses</li>
+                    <li>Reduced time spent fetching water (especially benefiting children's education)</li>
+                    <li>Economic and social benefits for women and families</li>
+                </ul>
+            </div>
+            
+            <div class="gallery-container">
+                <h2>Image Gallery</h2>
+                <div class="gallery">
+                    <img src="images/projects/clean water/cleany.jpeg" alt="Clean water project image 1">
+                    <img src="images/projects/clean water/clean 7.jpeg" alt="Clean water project image 2">
+                    <img src="images/projects/clean water/clean 8.jpeg" alt="Clean water project image 1">
+                    <img src="images/projects/clean water/clean1.jpeg" alt="Clean water project image 2">
+                    <img src="images/projects/clean water/clean3.jpeg" alt="Clean water project image 3">
+                    <img src="images/projects/clean water/cleanwater2.jpeg" alt="Clean water project image 4">
+                     
+                </div>
+            </div>
+            
+            <div class="gallery-container">
+                <h2>Video Gallery</h2>
+                <div class="gallery">
+                    <video controls>
+                        <source src="videos/clenahh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls>
+                        <source src="videos/cleanhdhsliu.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls>
+                        <source src="videos/cleanvideo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls>
+                        <source src="videos/cleanvideo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for image/video zoom -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <video class="modal-content" id="modal-video" controls></video>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="java/java.js"></script>
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-image");
+        const modalVideo = document.getElementById("modal-video");
+        const closeBtn = document.querySelector(".close");
+        
+        // Get all gallery items
+        const galleryItems = document.querySelectorAll('.gallery img, .gallery video');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                if (this.tagName === 'IMG') {
+                    modalImg.src = this.src;
+                    modalImg.style.display = "block";
+                    modalVideo.style.display = "none";
+                } else {
+                    modalVideo.src = this.querySelector('source').src;
+                    modalVideo.style.display = "block";
+                    modalImg.style.display = "none";
+                }
+                modal.style.display = "block";
+            });
+        });
+        
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = "none";
+            modalVideo.pause();
+        });
+        
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                modalVideo.pause();
+            }
+        });
+    </script>
+</body>
+</html>

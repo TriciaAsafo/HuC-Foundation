@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact {
+            padding: 3rem 0;
+        }
+        
+        .contact-form {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .social-links img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/LOGO 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Reach out with questions, partnership inquiries, or to learn how you can support our mission.</p>
+            
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Other Ways to Reach Us</h2>
+                <p>Office Location: Hse Number J1, 25 Black Volta Lane, Tema-Community 7</p>
+                <p>P. O. Box CE 11496, Tema</p>
+                <p>Phone: +233 (0)243978789</p>
+                <p>Email: <a href="mailto:hearturcommunityfoundation@gmail.com">hearturcommunityfoundation@gmail.com</a></p>
+                
+                <div class="social-links">
+                    <a href="https://web.facebook.com/hearturcommunityfoundation" target="_blank" rel="noopener">
+                        <img src="images/facebook logo.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/hearturcommunity_foundation/" target="_blank" rel="noopener">
+                        <img src="images/instagram-logo.webp" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/hearturcommunity-foundation-a4ba68238/" target="_blank" rel="noopener">
+                        <img src="images/Linkedin logo.webp" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="Java/java.js"></script>
+</body>
+</html>

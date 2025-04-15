@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Northern Star | HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-detail {
+            padding: 3rem 0;
+        }
+        
+        .project-overview {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-container {
+            margin: 2rem 0;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: #0b0242;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <h1>Project Northern Star</h1>
+            
+            <div class="project-overview">
+                <h2>Improving Educational Conditions in Wa</h2>
+                <p>This initiative focuses on enhancing the learning environment at Northern Star Senior High School in Wa, Ghana, through infrastructure improvements and resource provision.</p>
+                
+                <h3>Key Objectives:</h3>
+                <ul>
+                    <li>Construct a water reservoir system to provide reliable water access</li>
+                    <li>Renovate and equip classroom facilities</li>
+                    <li>Provide modern educational materials</li>
+                    <li>Improve sanitation facilities with water-dependent systems</li>
+                    <li>Establish sustainable water solutions for the school community</li>
+                    <li>Create a mentorship program for students</li>
+                </ul>
+                
+                <div class="impact-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Classrooms Renovated</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,200+</div>
+                        <div class="stat-label">Students Impacted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">New Washrooms Built</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-container">
+                <h2>Project Gallery</h2>
+                <div class="gallery">
+                    <img src="images/projects/northern-star/northern4.jpg" alt="Classroom renovation">
+                    <img src="images/projects/northern-star/northern3.jpg" alt="Students in classroom">
+                    <img src="images/projects/northern-star/northern.jpg" alt="School building">
+                    <img src="images/projects/northern-star/northern 7.jpg" alt="Donated materials">
+                    <img src="images/projects/northern-star/northern 6.jpg" alt="Completed washroom">
+                    <img src="images/projects/northern-star/northern 5.jpg" alt="Student mentorship session">
+                </div>
+            </div>
+            
+            <div class="project-overview" style="margin-top: 2rem;">
+                <h3>Future Goals</h3>
+                <p>We aim to expand this project to include:</p>
+                <ul>
+                    <li>Computer lab establishment</li>
+                    <li>Library expansion</li>
+                    <li>Scholarship program for needy students</li>
+                </ul>
+                <a href="contacts.html" class="btn">Support This Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="java/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects {
+            padding: 3rem 0;
+        }
+        
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        .project-info h3 {
+            color: #0b0242;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="projects">
+            <h1>Our Projects</h1>
+            <p>Discover the impactful work we're doing in communities across Ghana and Togo.</p>
+            
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="images/projects/clean water/cleanwater.jpg" alt="Clean Water Initiative">
+                    <div class="project-info">
+                        <h3>Clean Water, Healthy Lives</h3>
+                        <p>Providing clean water to Biankouri, Togo to improve health and wellbeing.</p>
+                        <a href="clean-water.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/projects/northern-star/northern.jpg" alt="Project Northern Star">
+                    <div class="project-info">
+                        <h3>Project Northern Star</h3>
+                        <p>Improving conditions at Northern Star Senior High School in Wa.</p>
+                        <a href="northernstar.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/projects/amazing-shepherd/good shepherd.jpg" alt="Amazing Shepherd Donation">
+                    <div class="project-info">
+                        <h3>Donation to Amazing Shepherd</h3>
+                        <p>Supporting the Amazing Shepherd community with essential resources.</p>
+                        <a href="amazing-shepherd.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/projects/save-them-young/save them young 1.jpg" alt="Save Them Young">
+                    <div class="project-info">
+                        <h3>Save Them Young – Ashaiman</h3>
+                        <p>Providing support to the Save Them Young initiative.</p>
+                        <a href="savethem.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="java/java.js"></script>
+</body>
+</html>

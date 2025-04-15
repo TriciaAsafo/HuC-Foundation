@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Page-specific styles */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 0;
+            background-color: #f9f9f9;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            color: #0b0242;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            
+            .hero-content {
+                order: 2;
+                padding: 1rem 0;
+            }
+            
+            .hero-image {
+                order: 1;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Empowering Communities for a Brighter Future</h1>
+                <p>HearturCommunity Foundation is a non-profit organisation dedicated to the total development of people in underprivileged communities.</p>
+                <p>Formally registered as a Non-Governmental Organization (NGO) under the codes of Ghana in May 2022, with the express purpose of collaborating with other partners and sponsors to improve communities' access to basic needs.</p>
+                <p>Since 2014, we've worked to close the gap in livelihoods of people in very deprived communities in Ghana that lack access to basic needs such as schools, hospitals, clean water, libraries, and vocational centers.</p>
+                <a href="projects.html" class="btn">Explore Our Projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hope.jpg" alt="Community members participating in HearturCommunity activities">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="java/java.js"></script>
+</body>
+</html>

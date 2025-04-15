@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners | HearturCommunity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .partners {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            align-items: center;
+        }
+        
+        .partner-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .partner-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .partner-card img {
+            max-width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section {
+            background: #f9f9f9;
+            padding: 3rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo 2.png" alt="HearturCommunity Foundation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="partners">
+            <h1>Our Partners</h1>
+            <p>Through the support of our partners, we have made significant strides in our mission to empower communities.</p>
+            
+            <div class="partner-grid">
+                <div class="partner-card">
+                    <img src="images/pdjfoundation_logo.png" alt="Rainbow Trust Foundation">
+                    <h3>Poul Due Jensen Foundation</h3>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="images/friends-family.png" alt="Community Water Alliance">
+                    <h3>Family & Friends</h3>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Become a Partner</h2>
+                <p>Join us in making a difference. Partner with HearturCommunity Foundation to create lasting impact.</p>
+                <a href="contacts.html" class="btn">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 HearturCommunity Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="java/java.js"></script>
+</body>
+</html>
